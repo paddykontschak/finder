@@ -9,65 +9,41 @@ $(document).ready ->
 	$("#media .arrow").click ->
 		if $("#media dd").css("display") is "none"
 			$("#media dd").css "display", "block"
-			$("#media .arrow").css "-webkit-transform", "rotate(0deg)"
-			$("#media .arrow").css "-moz-transform", "rotate(0deg)"
-			$("#media .arrow").css "-o-transform", "rotate(0deg)"
-			$("#media .arrow").css "transform", "rotate(0deg)"
+			$("#media .arrow").removeClass "rotate-90"
 			return
 		unless $("#media dd").css("display") is "none"
 			$("#media dd").css "display", "none"
-			$("#media .arrow").css "-webkit-transform", "rotate(-90deg)"
-			$("#media .arrow").css "-moz-transform", "rotate(-90deg)"
-			$("#media .arrow").css "-o-transform", "rotate(-90deg)"
-			$("#media .arrow").css "transform", "rotate(-90deg)"
+			$("#media .arrow").addClass "rotate-90"
 			return
 
 	$("#places .arrow").click ->
 		if $("#places dd").css("display") is "none"
 			$("#places dd").css "display", "block"
-			$("#places .arrow").css "-webkit-transform", "rotate(0deg)"
-			$("#places .arrow").css "-moz-transform", "rotate(0deg)"
-			$("#places .arrow").css "-o-transform", "rotate(0deg)"
-			$("#places .arrow").css "transform", "rotate(0deg)"
+			$("#places .arrow").removeClass "rotate-90"
 			return
 		unless $("#places dd").css("display") is "none"
 			$("#places dd").css "display", "none"
-			$("#places .arrow").css "-webkit-transform", "rotate(-90deg)"
-			$("#places .arrow").css "-moz-transform", "rotate(-90deg)"
-			$("#places .arrow").css "-o-transform", "rotate(-90deg)"
-			$("#places .arrow").css "transform", "rotate(-90deg)"
+			$("#places .arrow").addClass "rotate-90"
 			return
 
-	$("#searches .arrow2").click ->
+	$("#searches .arrow").click ->
 		if $("#searches dd").css("display") is "none"
 			$("#searches dd").css "display", "block"
-			$("#searches .arrow2").css "-webkit-transform", "rotate(0deg)"
-			$("#searches .arrow2").css "-moz-transform", "rotate(0deg)"
-			$("#searches .arrow2").css "-o-transform", "rotate(0deg)"
-			$("#searches .arrow2").css "transform", "rotate(0deg)"
+			$("#searches .arrow").removeClass "rotate-90"
 			return
 		unless $("#searches dd").css("display") is "none"
 			$("#searches dd").css "display", "none"
-			$("#searches .arrow2").css "-webkit-transform", "rotate(-90deg)"
-			$("#searches .arrow2").css "-moz-transform", "rotate(-90deg)"
-			$("#searches .arrow2").css "-o-transform", "rotate(-90deg)"
-			$("#searches .arrow2").css "transform", "rotate(-90deg)"
+			$("#searches .arrow").addClass "rotate-90"
 			return
 
-	$("#shared .arrow2").click ->
+	$("#shared .arrow").click ->
 		if $("#shared dd").css("display") is "none"
 			$("#shared dd").css "display", "block"
-			$("#shared .arrow2").css "-webkit-transform", "rotate(0deg)"
-			$("#shared .arrow2").css "-moz-transform", "rotate(0deg)"
-			$("#shared .arrow2").css "-o-transform", "rotate(0deg)"
-			$("#shared .arrow2").css "transform", "rotate(0deg)"
+			$("#shared .arrow").removeClass "rotate-90"
 			return
 		unless $("#shared dd").css("display") is "none"
 			$("#shared dd").css "display", "none"
-			$("#shared .arrow2").css "-webkit-transform", "rotate(-90deg)"
-			$("#shared .arrow2").css "-moz-transform", "rotate(-90deg)"
-			$("#shared .arrow2").css "-o-transform", "rotate(-90deg)"
-			$("#shared .arrow2").css "transform", "rotate(-90deg)"
+			$("#shared .arrow").addClass "rotate-90"
 			return
 
 	$(".eject").click ->

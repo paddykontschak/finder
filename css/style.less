@@ -1370,6 +1370,12 @@ footer {
 	font-size: 8pt;
 }
 
+/* Coffeescript CSS */
+
+.rotate-90 {
+	.rotate(-90deg);
+}
+
 /* Lion/iOS scrollbars */
 ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -1382,31 +1388,4 @@ footer {
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-/* CSS3 Animation */
-
-@-webkit-keyframes spin {
-from {  
-    -webkit-transform: rotate(0deg);  
-}  
-to {  
-    -webkit-transform: rotate(360deg);  
-    }  
-}
-
-~"@-moz-keyframes spin {  
-from {  
-    -moz-transform: rotate(0deg);
-}  
-to {  
-    -moz-transform: rotate(360deg);
-    }  
-}"
-
-@keyframes spin {  
-from {  
-    transform: rotate(0deg);
-}  
-to {  
-    transform: rotate(360deg);
-    }
-}
+@import 'animation.css';
