@@ -52,15 +52,11 @@ $(document).ready ->
 	$("#settings").click ->
 		if $("#settingsmenu").css("display") is "none"
 			$("#settingsmenu").css "display", "block"
-			$("#settings .single").css "-moz-box-shadow", "inset 0 0 32px #2d2d2d"
-			$("#settings .single").css "-webkit-box-shadow", "inset 0 0 32px #2d2d2d"
-			$("#settings .single").css "box-shadow", "inset 0 0 32px #2d2d2d"
+			$("#settings .single").addClass "menushadow"
 			return
 		unless $("#settingsmenu").css("display") is "none"
 			$("#settingsmenu").css "display", "none"
-			$("#settings .single").css "-moz-box-shadow", "inset 0 0 0"
-			$("#settings .single").css "-webkit-box-shadow", "inset 0 0 0"
-			$("#settings .single").css "box-shadow", "inset 0 0 0"
+			$("#settings .single").removeClass "menushadow"
 			return
 
 	$("#green").click ->
