@@ -1,6 +1,8 @@
-Mac OS X 10.6 Finder in CSS3 and JQuery
+Mac OS X 10.6 Finder in code
 ===
 
-A personal project to play around with CSS3 with additional, but limited functions. I'm currently rewriting the JS code with CoffeeScript.
+A personal project to play around with code.
+
+It started when I wanted to learn CSS3, I later added JQuery. I'm currently rewriting the HTML with HAML and the JQuery with CoffeeScript.
 
 Demo: http://patrickkontschak.com/css3/finder/
