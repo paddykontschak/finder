@@ -1,0 +1,266 @@
+!!!
+%html
+	%head
+		%title Mac OS X 10.6 Finder in CSS3 and JQuery
+		%meta{:description => "Mac OS X Finder replicated with CSS3"}
+		%meta{:keywords => "apple, mac, mac os x, finder, css3, html5, ui, macbook, macbook pro, books, css, html"}
+		%meta{:author => "Patrick Kontschak"}
+		%style{:type => "text/css", :media => "all"} @import "https://github.com/necolas/normalize.css/raw/master/normalize.css";
+		%style{:type => "text/css", :media => "all"} @import "css/style.css";
+		/[if lt IE 9]
+			%script{:src => "http://html5shim.googlecode.com/svn/trunk/html5.js"}
+		%script{:type => "text/javascript", :src => "scripts/jquery.min.js"}
+		%script{:type => "text/javascript", :src => "scripts/jquery-ui.min.js"}
+		%script{:type => "text/javascript", :src => "scripts/script.js"}
+		%link{:rel => "icon", :href => "images/favicon.png"}
+	%body
+		%header
+			%h1 Mac OS X 10.6 Finder in CSS
+			%p#undertext
+				I
+				%span.heart &lt;3
+				CSS3
+		#macbook
+			#screen
+				#isight
+				#desktop
+					#finder
+						#topnav
+							#traffic
+								.border
+									#red
+										#aqua
+								.border
+									#yellow
+										#aqua
+								.border
+									#green
+										#aqua
+								#title
+									%img{:src => "images/System.png"}/
+									patrick
+								#grey-border
+									#grey
+										#aqua
+							#toolbar
+								#nav
+									#back
+										#back-arrow
+									#forward
+										#forward-arrow
+								#view
+									#icon-view-active
+										#icons
+											#icon1
+											#icon2
+											#icon3
+											#icon4											
+									#list-view
+										#line1
+										#line2
+										#line3
+										#line4
+									#column
+										#column1
+										#column2
+										#column3
+									#coverflow
+										#coverflow-left-big
+										#coverflow-left-small
+										#cover
+										#coverflow-right-small
+										#coverflow-right-big
+								#quicklook
+									.single
+										#eye
+											#iris
+												#black
+								#settings
+									.single
+										#gear
+											#gears
+												#gear1
+												#gear2
+												#gear3
+												#gear4
+													#gear-hole
+										#arrow-down
+								#search
+									%input#search-field{:type => "search", :results => "5"}
+						#bookmarks
+							#devices
+								%dl#media
+									%dt
+										%span.arrow DEVICES
+									%dd
+										%img{:src => "images/Internal.png"}/
+										Macintosh HD
+									%dd
+										%img{:src => "images/timemachine.png"}/
+										Backup
+										%span#sync
+											%img.sync{:src => "images/sync.png"}/
+									%dd
+										%img{:src => "images/disk.png"}/
+										USB Stick
+										%span.eject
+								%dl#shared
+									#dt
+										%span.arrow.rotate-90 SHARED
+									%dd
+										%img{:src => "images/twitter.png"}/
+										Twitter
+									%dd
+										%img{:src => "images/facebook.png"}/
+										Facebook
+									%dd
+										%img{:src => "images/email.png"}/
+										Email
+								%dl#places
+									#dt
+										%span.arrow PLACES
+									%dd
+										%img{:src => "images/Desktop.png"}/
+										Desktop
+									%dd#home.active-sidebar
+										%img{:src => "images/System.png"}/
+										patrick
+									%dd
+										%img{:src => "images/Applications.png"}/
+										Applications
+									%dd
+										%img{:src => "images/Downloads.png"}/
+										Downloads
+									%dd
+										%img{:src => "images/Pictures.png"}/
+										Pictures
+									%dd
+										%img{:src => "images/Music.png"}/
+										Music
+									%dd
+										%img{:src => "images/Movies.png"}/
+										Movies
+								%dl#searches
+									#dt
+										%span.arrow.rotate-90 SEARCH FOR
+									%dd
+										%img{:src => "images/Clock.png"}/
+										Today
+									%dd
+										%img{:src => "images/Clock.png"}/
+										Yesterday
+									%dd
+										%img{:src => "images/Clock.png"}/
+										Past Week
+						#splitter
+						#home-folder.folder
+							.folder-icons#desktop-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Desktop
+								%p.info No items
+							.folder-icons#documents-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Documents
+								%p.info 16 items
+							.folder-icons#downloads-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Downloads
+								%p.info No items
+							.folder-icons#library-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Library
+								%p.info 82 items
+							.folder-icons#movies-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Movies
+								%p.info 10 items
+							.folder-icons#music-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Music
+								%p.info 5 items
+							.folder-icons#pictures-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Pictures
+								%p.info 11 items
+							.folder-icons#public-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Public
+								%p.info 8 items
+							.folder-icons#sites-folder
+								.folder-full
+									.folder-icon-back
+									.folder-icon-middle
+									.folder-icon-front
+								%p.name Sites
+								%p.info No items
+						#settingsmenu
+						#path
+							.path
+								%img{:src => "images/Internal.png"}/
+								Macintosh HD
+							.small-arrow
+							.path
+								%img{:src => "images/Folder.png"}/
+								Users
+							.small-arrow
+							.path
+								%img{:src => "images/System.png"}/
+								patrick
+						#statusbar
+							#dice
+								#dice1
+								#dice2
+								#dice3
+								#dice4
+							#status
+								%p 9 items, 13.37 GB available
+							#expander
+								#big
+								#medium
+								#small
+							#sizebar
+								#radio
+									#radio-hole
+				#name
+					%p MacBook Pro
+			#book
+				#top
+					#tab
+					#battery
+					#IR
+				#bottom
+		%article
+			%h2
+				%a{:href => "http://patrickkontschak.tumblr.com/post/4768843471/mac-os-x-10-6-finder-in-css3-and-jquery"} About this Project
+		%footer
+			%p
+				&copy; 2010 - 2012 |
+				%a{:href => "http://codinggoat.com/"} patrick kontschak
+				|
+				%a{:href => "http://patrickkontschak.tumblr.com/"} tumblr
+				|
+				%a{:href => "http://twitter.com/paddykontschak/"} twitter
